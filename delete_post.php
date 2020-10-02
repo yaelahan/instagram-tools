@@ -1,6 +1,6 @@
 <?php
 function send($type, $cookie, $id = null){
-    $url = "https://api.sgb.ooo/ig/$type.php?cookie=$cookie";
+    $url = "https://api.insta-follow.id/ig/$type.php?cookie=$cookie";
     $url .= ($id) ? "&id=$id" : "";
     $ch = curl_init($url);
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
